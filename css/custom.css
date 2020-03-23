@@ -1,0 +1,20 @@
+nav {
+  background-color: #0a1922 !important; }
+  nav .navbar-brand .navbar-logo {
+    color: white; }
+  nav .navbar-menu .navbar-item {
+    color: #aaa; }
+
+del {
+  color: #ccc; }
+
+table thead tr th {
+  background-color: #F5F5F5; }
+
+footer {
+  background-color: #0a1922 !important;
+  color: #ccc;
+  padding: 2rem !important; }
+  footer .container .columns {
+    padding: 0;
+    border-top: 0; }

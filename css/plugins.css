@@ -1,0 +1,4 @@
+#footnotelist li {
+  margin-bottom: 1rem; }
+  #footnotelist li span {
+    display: inline !important; }
