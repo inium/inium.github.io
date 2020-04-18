@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>카테고리 목록 - inlee&#39;s blog</title>
+<title>태그: xdebug - inlee&#39;s blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -19,10 +19,10 @@
 
 
     <meta name="description" content="inlee&amp;apos;s blog">
-<meta name="keywords" content="docker,php,xdebug,vscode,gitlab,culture,web,reverse proxy,nginx,let&#39;s encrypt,certbot,Hello,World">
+<meta name="keywords" content="developer,web">
 <meta property="og:type" content="website">
 <meta property="og:title" content="inlee&#39;s blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;inium.github.io&#x2F;categories&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;inium.github.io&#x2F;tags&#x2F;xdebug&#x2F;index.html">
 <meta property="og:site_name" content="inlee&#39;s blog">
 <meta property="og:description" content="inlee&amp;apos;s blog">
 <meta property="og:locale" content="ko">
@@ -99,7 +99,7 @@
             <a class="navbar-item "
                href="/archives">Archives</a>
             
-            <a class="navbar-item is-active"
+            <a class="navbar-item "
                href="/categories">Categories</a>
             
             <a class="navbar-item "
@@ -132,31 +132,55 @@
     <section class="section section-heading">
     <div class="container">
         <div class="content">
-            <h5><i class="far fa-folder"></i>카테고리 목록</h5>
+            <h5>#xdebug</h5>
         </div>
     </div>
 </section>
 <section class="section">
     <div class="container">
-        <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/04/19/docker-php-laravel-xdebug-vscode/" itemprop="url">PHP Dockerfile 만들기 (with Laravel, Xdebug, vscode)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-04-18T17:37:43.000Z" itemprop="datePublished">4월 19 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/web/">web</a><span>></span><a class="article-category-link" href="/categories/web/docker/">docker</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/web/">web&nbsp;(3)</a>
-            </span>
             
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/hello/">hello&nbsp;(1)</a>
-            </span>
-            
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/web/docker/">docker&nbsp;(2)</a>
-            </span>
-            
-            <span class="column is-narrow">
-                <a class="tag is-light article-tag" href="/categories/hello/world/">world&nbsp;(1)</a>
-            </span>
-            
-        </div>
+            19분 소요 (약 2889 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p><a href="https://hub.docker.com/_/php" target="_blank" rel="noopener">PHP docker 공식 이미지</a>는 PHP만 제공하기 때문에 추가로 필요한 패키지들은 별도로 설치하여 사용해야 한다. 그리고 Laravel과 같이 특정 라이브러리들을 <a href="https://laravel.kr/docs/7.x/installation" target="_blank" rel="noopener">필수</a>로 하는 프레임워크도 있기 때문에 대부분의 사용자들은 패키지들을 추가한 Dockerfile을 정의하여 사용한다.</p>
+<p>이 글은 PHP docker 공식 이미지에 일반 PHP와 Laravel 기반의 어플리케이션 개발/운영 환경을 포함하는 Dockerfile을 만든 내용이다.이를 위해 PHP에서 필수라 생각되는 패키지와 Laravel에서 요구하는 <a href="https://laravel.kr/docs/7.x/installation" target="_blank" rel="noopener">필수 패키지</a> 설치와 실행 설정을 하였다. 추가로 PHP 코드 디버깅(Debugging)을 위한 <a href="https://xdebug.org" target="_blank" rel="noopener">Xdebug</a> 설정과 <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> 에서의 설정을 하였다.</p>
+        <p class="article-more-link">
+            <a href="/2020/04/19/docker-php-laravel-xdebug-vscode/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
     </div>
 </section>
     <footer class="footer">
