@@ -19,10 +19,8 @@
       <pubDate>Sat, 18 Apr 2020 17:37:43 GMT</pubDate>
       <description>
       
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://hub.docker.com/_/php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP docker 공식 이미지&lt;/a&gt;는 PHP만 제공하기 때문에 추가로 필요한 패키지들은 별도로 설치하여 사용해야 한다
-        
+        &lt;p&gt;&lt;a href=&quot;https://hub.docker.com/_/php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP docker 공식 이미지&lt;/a&gt;는 PHP만 제공하기 때문에 추가로 필요한 패키지들은 별도로 설치하여 사용해야 한다. 그리고 Laravel과 같이 특정 라이브러리들을 &lt;a href=&quot;https://laravel.kr/docs/7.x/installation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;필수&lt;/a&gt;로 하는 프레임워크도 있기 때문에 대부분의 사용자들은 패키지들을 추가한 Dockerfile을 정의하여 사용한다.&lt;/p&gt;
+&lt;p&gt;이 글은 PHP docker 공식 이미지에 일반 PHP와 Laravel 기반의 어플리케이션 개발/운영 환경을 포함하는 Dockerfile을 만든 내용이다.이를 위해 PHP에서 필수라 생각되는 패키지와 Laravel에서 요구하는 &lt;a href=&quot;https://laravel.kr/docs/7.x/installation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;필수 패키지&lt;/a&gt; 설치와 실행 설정을 하였다. 추가로 PHP 코드 디버깅(Debugging)을 위한 &lt;a href=&quot;https://xdebug.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Xdebug&lt;/a&gt; 설정과 &lt;a href=&quot;https://code.visualstudio.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Visual Studio Code&lt;/a&gt; 에서의 설정을 하였다.&lt;/p&gt;
       
       </description>
       
@@ -39,11 +37,8 @@
       <pubDate>Fri, 03 Apr 2020 10:59:23 GMT</pubDate>
       <description>
       
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://github.com/inium/docker-nginx-certbot/raw/master/docs/brief.png&quot; alt=&quot;개요&quot;&gt;&lt;/p&gt;
-&lt;p&gt;이 글은 Docker를 이용해 NginX Reverse Proxy 
-        
+        &lt;p&gt;&lt;img src=&quot;https://github.com/inium/docker-nginx-certbot/raw/master/docs/brief.png&quot; alt=&quot;개요&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이 글은 Docker를 이용해 NginX Reverse Proxy 서버를 구성한 후 2개의 웹 어플리케이션(Node.js App, phpmyadmin)과 MySQL을 설한 방법에 대한 내용이다. 그리고 웹 어플리케이션에 사용한 Let’s Encrypt 인증서 발급 및 갱신, 확인 과정을 추가하였으며 마지막으로 이들을 자동화한 방법에 대해 소개하고자 한다.&lt;/p&gt;
       
       </description>
       
@@ -60,13 +55,10 @@
       <pubDate>Mon, 23 Mar 2020 08:36:14 GMT</pubDate>
       <description>
       
-        
-        
-          &lt;blockquote&gt;
+        &lt;blockquote&gt;
 &lt;p&gt;과유불급(過猶不及) - &lt;em&gt;정도를 지나침은 미치지 못한 것과 같음.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;개발자들이 자부심을 가지고 있는 것 중 하나는 사내의 개발 문화라고 생각한다. 이 개발 문화로 인해 개인
-        
+&lt;p&gt;개발자들이 자부심을 가지고 있는 것 중 하나는 사내의 개발 문화라고 생각한다. 이 개발 문화로 인해 개인이 성장하고 협업이 수월하게 되며 소스 코드의 품질이 올라간다. 심지어 개발자 채용에도 영향을 미친다. 마치 개발자들에게 매우 좋은 장비(특히 Mac과 4K 모니터)를 지급한다고 하면 혹하는 것처럼.&lt;/p&gt;
       
       </description>
       
@@ -83,10 +75,8 @@
       <pubDate>Sat, 23 Nov 2019 07:24:48 GMT</pubDate>
       <description>
       
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-        
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
       
       </description>
       
