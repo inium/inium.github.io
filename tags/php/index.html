@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>태그: php - inlee&#39;s blog</title>
+<title>태그: PHP - inlee&#39;s blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -22,7 +22,7 @@
 <meta name="keywords" content="developer,web">
 <meta property="og:type" content="website">
 <meta property="og:title" content="inlee&#39;s blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;inium.github.io&#x2F;tags&#x2F;php&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;inium.github.io&#x2F;tags&#x2F;PHP&#x2F;index.html">
 <meta property="og:site_name" content="inlee&#39;s blog">
 <meta property="og:description" content="inlee&amp;apos;s blog">
 <meta property="og:locale" content="ko">
@@ -132,7 +132,7 @@
     <section class="section section-heading">
     <div class="container">
         <div class="content">
-            <h5>#php</h5>
+            <h5>#PHP</h5>
         </div>
     </div>
 </section>
@@ -142,33 +142,33 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2020/04/19/docker-php-laravel-xdebug-vscode/" itemprop="url">PHP Dockerfile 만들기 (with Laravel, Xdebug, vscode)</a>
+            <a href="/2020/08/03/create-laravel-board/" itemprop="url">회고 - Laravel 게시판 패키지 구현 과정과 고민들</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2020-04-18T17:37:43.000Z" itemprop="datePublished">4월 19 2020</time>
+            <time datetime="2020-08-02T17:11:34.000Z" itemprop="datePublished">8월 3 2020</time>
         </span>
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/web/">web</a><span>></span><a class="article-category-link" href="/categories/web/docker/">docker</a>
+            <a class="article-category-link" href="/categories/web/">web</a>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            19분 소요 (약 2889 단어)
+            27분 소요 (약 4058 단어)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p><a href="https://hub.docker.com/_/php" target="_blank" rel="noopener">PHP docker 공식 이미지</a>는 PHP만 제공하기 때문에 추가로 필요한 패키지들은 별도로 설치하여 사용해야 한다. 그리고 Laravel과 같이 특정 라이브러리들을 <a href="https://laravel.kr/docs/7.x/installation" target="_blank" rel="noopener">필수</a>로 하는 프레임워크도 있기 때문에 대부분의 사용자들은 패키지들을 추가한 Dockerfile을 정의하여 사용한다.</p>
-<p>이 글은 PHP docker 공식 이미지에 일반 PHP와 Laravel 기반의 어플리케이션 개발/운영 환경을 포함하는 Dockerfile을 만든 내용이다.이를 위해 PHP에서 필수라 생각되는 패키지와 Laravel에서 요구하는 <a href="https://laravel.kr/docs/7.x/installation" target="_blank" rel="noopener">필수 패키지</a> 설치와 실행 설정을 하였다. 추가로 PHP 코드 디버깅(Debugging)을 위한 <a href="https://xdebug.org" target="_blank" rel="noopener">Xdebug</a> 설정과 <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> 에서의 설정을 하였다.</p>
+        <p>BBS(Bulletin Board System) 라고도 부르는 게시판은 웹 어플리케이션의 기본 중의 기본이기 때문에 웹 어플리케이션 개발자라면 자신만의 게시판을 가지고 있을 것이다. 이 글은 <a href="https://laravel.com" target="_blank" rel="noopener">Laravel</a> 에서 사용할 게시판을 패키지 형태로 만든 방법과 만든 과정과 그 여정에서 했던 고민들에 대한 내용이다. </p>
+<h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3>
         <p class="article-more-link">
-            <a href="/2020/04/19/docker-php-laravel-xdebug-vscode/#more">더 읽기</a>
+            <a href="/2020/08/03/create-laravel-board/#more">더 읽기</a>
         </p>
     
     </div>
@@ -312,6 +312,83 @@
         }
 
         .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="아무거나 입력하세요" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '글',
+                PAGES: '페이지',
+                CATEGORIES: '카테고리 목록',
+                TAGS: '태그 목록',
+                UNTITLED: '(제목없음)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>over > .clipboard-btn {
             display: inline;
         }
 
