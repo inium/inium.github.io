@@ -8,7 +8,7 @@
     
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>커피를 마셔 코드를 만들며 개인의 경험, 소프트웨어 개발 기술 등에 대해 다룹니다.</description>
+    <description>커피를 마셔 코드를 만들며 개인의 경험과 소프트웨어 개발 기술 등에 대해 다룹니다.</description>
     <pubDate>Sun, 09 Aug 2020 17:35:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
