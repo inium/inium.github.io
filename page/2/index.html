@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>inlee&#39;s blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="커피를 마셔 코드를 만들며 개인의 경험과 소프트웨어 개발 기술 등에 대해 다룹니다.">
+
+
+
+<meta name="keywords" content="software developer,web,php">
+
+
+
+    <meta name="description" content="커피를 마셔 코드를 만들며 개인의 경험과 소프트웨어 개발 기술 등에 대해 다룹니다.">
+<meta name="keywords" content="software developer,web,php">
+<meta property="og:type" content="website">
+<meta property="og:title" content="inlee&#39;s blog">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.inlee.me&#x2F;page&#x2F;2&#x2F;index.html">
+<meta property="og:site_name" content="inlee&#39;s blog">
+<meta property="og:description" content="커피를 마셔 코드를 만들며 개인의 경험과 소프트웨어 개발 기술 등에 대해 다룹니다.">
+<meta property="og:locale" content="ko">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Noto+Sans+KR|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153151440-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153151440-1');
+</script>
+
+
+    
+
+
+<link rel="alternate" href="/rss2.xml" title="inlee's blog" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    inlee&#39;s blog
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/categories">Categories</a>
+            
+            <a class="navbar-item "
+               href="/tags">Tags</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="검색" href="javascript:;" target="_blank" rel="noopener">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="RSS" href="/rss2.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/08/10/good-code-language-developer/" itemprop="url">좋은 코드란? 좋은 프로그래밍 언어란? 좋은 개발자란?</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-08-09T17:35:05.000Z" itemprop="datePublished">8월 10 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/think/">think</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            21분 소요 (약 3218 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>며칠 전 모 커뮤니티에 올라온 구인 글의 내용 중 “좋은 코드란? 좋은 프로그래밍 언어란? 고급 개발자란?” 에 관련한 주제로 글을 써 주면 판단하는데 도움이 될 것 같다는 내용이 있었다. 이 문장을 보고 생각했었던 것들을 정리해 봐야겠다는 생각이 들었고 앞으로 개발자로서의 방향에 대해서도 생각할 수 있을 것 같아 적어보고자 한다. 단, 고급 개발자에 대해서는 능력이 좋은 개발자를 지칭하는 것으로 느껴져 좋은 개발자로 바꾸어 보고자 한다. </p>
+<h3 id="좋은-코드란"><a href="#좋은-코드란" class="headerlink" title="좋은 코드란"></a>좋은 코드란</h3>
+        <p class="article-more-link">
+            <a href="/2020/08/10/good-code-language-developer/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/08/03/create-laravel-board/" itemprop="url">회고 - Laravel 게시판 패키지 구현 과정과 고민들</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-08-02T17:11:34.000Z" itemprop="datePublished">8월 3 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/web/">web</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            27분 소요 (약 4058 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>BBS(Bulletin Board System) 라고도 부르는 게시판은 웹 어플리케이션의 기본 중의 기본이기 때문에 웹 어플리케이션 개발자라면 자신만의 게시판을 가지고 있을 것이다. 이 글은 <a href="https://laravel.com" target="_blank" rel="noopener">Laravel</a> 에서 사용할 게시판을 패키지 형태로 만든 방법과 만든 과정과 그 여정에서 했던 고민들에 대한 내용이다. </p>
+<h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3>
+        <p class="article-more-link">
+            <a href="/2020/08/03/create-laravel-board/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/07/20/github-arctic-code-valut-contributor/" itemprop="url">github-arctic-code-valut-contributor</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-07-20T07:00:46.620Z" itemprop="datePublished">7월 20 2020</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            몇 초 소요 (약 12 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <h2 id="Github-북극-보관-프로젝트에-기여"><a href="#Github-북극-보관-프로젝트에-기여" class="headerlink" title="Github 북극 보관 프로젝트에 기여"></a>Github 북극 보관 프로젝트에 기여</h2>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/04/19/docker-php-laravel-xdebug-vscode/" itemprop="url">PHP Dockerfile 만들기 (with Laravel, Xdebug, vscode)</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-04-18T17:37:43.000Z" itemprop="datePublished">4월 19 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/web/">web</a><span>></span><a class="article-category-link" href="/categories/web/docker/">docker</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            19분 소요 (약 2889 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p><a href="https://hub.docker.com/_/php" target="_blank" rel="noopener">PHP docker 공식 이미지</a>는 PHP만 제공하기 때문에 추가로 필요한 패키지들은 별도로 설치하여 사용해야 한다. 그리고 Laravel과 같이 특정 라이브러리들을 <a href="https://laravel.kr/docs/7.x/installation" target="_blank" rel="noopener">필수</a>로 하는 프레임워크도 있기 때문에 대부분의 사용자들은 패키지들을 추가한 Dockerfile을 정의하여 사용한다.</p>
+<p>이 글은 PHP docker 공식 이미지에 일반 PHP와 Laravel 기반의 어플리케이션 개발/운영 환경을 포함하는 Dockerfile을 만든 내용이다.이를 위해 PHP에서 필수라 생각되는 패키지와 Laravel에서 요구하는 <a href="https://laravel.kr/docs/7.x/installation" target="_blank" rel="noopener">필수 패키지</a> 설치와 실행 설정을 하였다. 추가로 PHP 코드 디버깅(Debugging)을 위한 <a href="https://xdebug.org" target="_blank" rel="noopener">Xdebug</a> 설정과 <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a> 에서의 설정을 하였다.</p>
+        <p class="article-more-link">
+            <a href="/2020/04/19/docker-php-laravel-xdebug-vscode/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/04/04/docker-php-xdebug-vscode/" itemprop="url">docker-php-xdebug-vscode</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-04-04T09:54:11.592Z" itemprop="datePublished">4월 4 2020</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            몇 초 소요 (약 0 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/04/03/docker-nginx-certbot/" itemprop="url">Docker를 이용한 Reverse Proxy 서버 구성 및 자동화</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-04-03T10:59:23.000Z" itemprop="datePublished">4월 3 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/web/">web</a><span>></span><a class="article-category-link" href="/categories/web/docker/">docker</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            23분 소요 (약 3466 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p><img src="https://github.com/inium/docker-nginx-certbot/raw/master/docs/brief.png" alt="개요"></p>
+<p>이 글은 Docker를 이용해 NginX Reverse Proxy 서버를 구성한 후 2개의 웹 어플리케이션(Node.js App, phpmyadmin)과 MySQL을 설한 방법에 대한 내용이다. 그리고 웹 어플리케이션에 사용한 Let’s Encrypt 인증서 발급 및 갱신, 확인 과정을 추가하였으며 마지막으로 이들을 자동화한 방법에 대해 소개하고자 한다.</p>
+        <p class="article-more-link">
+            <a href="/2020/04/03/docker-nginx-certbot/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/03/23/build-dev-culture/" itemprop="url">회사 소프트웨어 개발 문화를 만든 과정과 느낀점</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-03-23T08:36:14.000Z" itemprop="datePublished">3월 23 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/web/">web</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            32분 소요 (약 4747 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote>
+<p>과유불급(過猶不及) - <em>정도를 지나침은 미치지 못한 것과 같음.</em></p>
+</blockquote>
+<p>개발자들이 자부심을 가지고 있는 것 중 하나는 사내의 개발 문화라고 생각한다. 이 개발 문화로 인해 개인이 성장하고 협업이 수월하게 되며 소스 코드의 품질이 올라간다. 심지어 개발자 채용에도 영향을 미친다. 마치 개발자들에게 매우 좋은 장비(특히 Mac과 4K 모니터)를 지급한다고 하면 혹하는 것처럼.</p>
+        <p class="article-more-link">
+            <a href="/2020/03/23/build-dev-culture/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/03/13/php-code-case-other-companies/" itemprop="url">다른 회사의 PHP 코드를 보며 느꼈던 것들</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-03-13T08:11:27.000Z" itemprop="datePublished">3월 13 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/web/">web</a><span>></span><a class="article-category-link" href="/categories/web/php/">php</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            몇 초 소요 (약 78 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>본 글은 다른 회사에서 구현한 PHP 코드 + α 를 보며 느꼈던 내용이다. </p>
+<p>회사에 근무하게 되면 다른 회사에서 구현한 코드를 인계받아 업무를 지속해야 하는 경우도 생긴다.</p>
+        <p class="article-more-link">
+            <a href="/2020/03/13/php-code-case-other-companies/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/03/12/howto-write-git-commit-messsage/" itemprop="url">howto-write-git-commit-messsage</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-03-12T09:43:25.594Z" itemprop="datePublished">3월 12 2020</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            몇 초 소요 (약 0 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/03/11/human-task-switches-considered-harmful/" itemprop="url">개발자는 멀티태스킹 기계가 아니다</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-03-11T08:11:27.000Z" itemprop="datePublished">3월 11 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Developer/">Developer</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            5분 소요 (약 743 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote>
+<p>23장. 개발자는 멀티태스킹 기계가 아니다 - <em>조엘 온 소프트웨어(Joel on Software)</em></p>
+</blockquote>
+<p>개발자라면 누구나 다 알고 있는 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=553103" target="_blank" rel="noopener">조엘 온 소프트웨어(Joel on Software)</a> 23장의 제목이다. 이 장에서는 작업 2개 (A/B)를 직렬 &amp; 병렬 처리 시 각각의 업무 효율에 대해 이야기하고 있고 업무 전환 시간을 고려한다면 직렬 업무 처리가 훨씬 효율적이라고 말하고 있다. 그리고 사람은 기계보다 업무 전환에 필요한 시간이 많이 걸리고 관리자는 개발자에게 한가지 일에 몰두할 수 있도록 해줘야 할 책임이 있으며 2가지 일을 동시에 하도록 해서는 안된다고 언급하고 있다.</p>
+        <p class="article-more-link">
+            <a href="/2020/03/11/human-task-switches-considered-harmful/#more">더 읽기</a>
+        </p>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+        
+<nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+    <div class="pagination-previous">
+        <a href="/">이전</a>
+    </div>
+    <div class="pagination-next">
+        <a href="/page/3/">다음</a>
+    </div>
+    <ul class="pagination-list is-hidden-mobile">
+        
+        <li><a class="pagination-link" href="/">1</a></li>
+        
+        <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+        
+        <li><a class="pagination-link" href="/page/3/">3</a></li>
+        
+    </ul>
+</nav>
+    
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-left">
+                &copy; 2020 inlee&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                        <br>
+                        Modified by <a href="https://inium.github.io" target="_blank" rel="noopener">inlee</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow" title="GitHub" href="https://github.com/inium" target="_blank" rel="noopener">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("ko");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="아무거나 입력하세요" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '글',
+                PAGES: '페이지',
+                CATEGORIES: '카테고리 목록',
+                TAGS: '태그 목록',
+                UNTITLED: '(제목없음)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>

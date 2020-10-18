@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>인하우스 콘텐츠 시스템 유지보수 업체 경험 - inlee&#39;s blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="커피를 마셔 코드를 만들며 개인의 경험과 소프트웨어 개발 기술 등에 대해 다룹니다.">
+
+
+
+<meta name="keywords" content="software developer,web,php">
+
+
+
+    <meta name="description" content="자체 솔루션을 이용한 콘텐츠 제공 업체의 시스템 유지보수 PHP 5.3, 소스코드 Lecagy: 학부 수준의 소스코드 관리">
+<meta name="keywords" content="인하우스,콘텐츠,개발자,SM,Legacy Codes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="인하우스 콘텐츠 시스템 유지보수 업체 경험">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.inlee.me&#x2F;2020&#x2F;09&#x2F;19&#x2F;in-house-system-management&#x2F;index.html">
+<meta property="og:site_name" content="inlee&#39;s blog">
+<meta property="og:description" content="자체 솔루션을 이용한 콘텐츠 제공 업체의 시스템 유지보수 PHP 5.3, 소스코드 Lecagy: 학부 수준의 소스코드 관리">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2020-09-19T08:31:44.975Z">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Noto+Sans+KR|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153151440-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153151440-1');
+</script>
+
+
+    
+
+
+<link rel="alternate" href="/rss2.xml" title="inlee's blog" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    inlee&#39;s blog
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/categories">Categories</a>
+            
+            <a class="navbar-item "
+               href="/tags">Tags</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="검색" href="javascript:;" target="_blank" rel="noopener">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="목차">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                </div>
+            </div>
+            
+            
+            <a class="navbar-item" title="RSS" href="/rss2.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            인하우스 콘텐츠 시스템 유지보수 업체 경험
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-09-19T08:31:44.975Z" itemprop="datePublished">9월 19 2020</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            9분 소요 (약 1332 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>자체 솔루션을 이용한 콘텐츠 제공 업체의 시스템 유지보수</p>
+<p>PHP 5.3, 소스코드 Lecagy: 학부 수준의 소스코드 관리</p>
+<p>php legacy -&gt; 올릴 수 없음(잘못 올렸다간 현재 동작중인 웹사이트 오류 발생가능성 100%)<br>이건 이해하나 소스코드의 의존성, 개판인 소스코드 관리 등으로 인해 불가능</p>
+<p>버전관리를 전혀하지 않음: svn이 있긴 하나 비교용으로만 사용<br>git을 사용하려 하고 있으나 실행은 하지 않음</p>
+<p>일부 인원이 개발도구를 editplus, notepad++ 사용</p>
+<ul>
+<li>추가 개발 보단 유지보수에 초점을 맞춤</li>
+<li>일부 개발자들은 phpstorm 이용 (개인이 사서 사용) - 본인은 vscode 사용</li>
+</ul>
+<p>다른 개발인원과 이야기해본 느낌</p>
+<ul>
+<li>본인들도 유지보수에 애를 먹고 있음 (개발-실서버 환경이 통일되지 않음)</li>
+<li>구조적으로 짜여 있지 않은 코드에 대한 개발에 대한 스트레스</li>
+<li>새로운 것을 해 보고 싶은 욕구 있음. 새로운 것을 해 보았으나 결국 완전히 하지 못함.</li>
+</ul>
+<p>개발서버(ftp)에 올려 소스코드 정상적으로 돌아가면 실서버에 배포 -&gt; 안돌아가는 경우 발생</p>
+<p>docker에 대한 보수적인 입장(서버 관리자는 그럴 수 있으나 docker는 대세가 되어버린지 오래)</p>
+<p>보안인증? isms 에 대한 이슈 존재</p>
+<ul>
+<li>웹사이트 전체에 https 적용해야 하는데 그러지 못하는 상황</li>
+<li>일부 페이지만 적용할 수 없냐는 전화통화 들음</li>
+</ul>
+<p>(어깨넘어들은) SI에 대한 무시 -&gt;<br>SI 업체에서 사무실 좋다고 본인들도 와서 일해도 되냐고 물었음 -&gt; 와서 일하라고 했으나 내부 직원들끼리 이야기할 때 그 뉘앙스가 무시하는 듯한 말투</p>
+<ul>
+<li>사실 SI는 매우 전문성이 높은 조직 (+ 컨설턴트) =&gt; 하지만 한국에서의 SI는 그 의미가 퇴색</li>
+</ul>
+<p>그 SI 업체는 php 5.6, CentOS 8 제안</p>
+<ul>
+<li>신규 개발에 centos는 최신으로 제안하고 php는 왜 구버전을 제안하는지?</li>
+<li>docker 는 사용하지 않는 것으로 보임</li>
+</ul>
+<hr>
+<p>그럼 배울 것이 있는가? 있음</p>
+<ol>
+<li><p>20년 묵은 산삼은 몸에 좋으나 20년된 소스코드는 몸에 해로움</p>
+</li>
+<li><p>legacy 코드를 매우 오랜만에 보았음. hard coding으로 literal 을 넣어(테스트 사용자 아이디, 접근허용 IP 등) 사용하였으나 언제 작성되었는지는 모르겠으며 지우지 않음. 시간이 지나가면 손을 대지 않는 것으로 보이며 르블랑의 법칙처럼 나중은 오지 않음.<br>2-1. 이런 행동이 반복적으로 20년동안 누적되며 손을 댈 수 없는 괴물이 되어버림. 소스코드를 보면 수정이 가능하나 업무이력을 모르기 때문에 손을 대면 안되는 것이 되어버림. 서버의 사랑방 한칸을 차지해버린 고인물이 되어버림.</p>
+</li>
+<li><p>20년동안 리뉴얼 없이 진행 가능하다는 것을 알았으며 새로운 것 도입이 거의 없이 최소 20년동안 가능하다는 것을 알았음. 그리고 개발자들이 모자라는 이유가 있다는 것을 느꼈음.</p>
+</li>
+<li><p>소스코드 작성하던 방식이 본인 군대 전역한 그 해 처음으로 한 업무에서 했던 방식과 똑같음. 따져보면 modern php를 도입해 사용한 기업(전회사)과 현 직장의 기술 수준 격차를 비교해보면 15년 정도로 보임.</p>
+</li>
+<li><p>콘텐츠 제공 기업, 국내 1위 기업이라 일정에 유두리를 둘 수 있는 것으로 보임 (다른 개발자와 대화하며 느낀 결과)</p>
+</li>
+<li><p>문서화를 안하면 어떻게 되는지 알게 되었음. 구전으로 전해져 내려오는 인수인계, 코드 내용 등을 파악하는데 시간이 오래 걸림. 사실 가장 좋은건 잘 볼 수 있게 짜여진 소스코드와 주석인데 이것들이 정확히 되어 있지 않음.</p>
+</li>
+<li><p>Dependency가 엄청 엮여 있음. </p>
+</li>
+<li><p>기술로 사는 기업이 아니면 기술이 다가 아님. 콘텐츠가 주요한 경쟁력. 최신 기술을 항상 도입하지 않아도 되며 개발을 잘 해야 하나? 라는 생각이 들긴 함. 개발 위주의 회사더라도 다른 분야의 인원과 같이 협업을 해야 하는 건은 당연함.</p>
+</li>
+<li><p>회사 규모가 중요한가? 라는 것에 대한 생각이 들었음. 회사 규모가 크면 다른 사람들과 같이 일을 하며 배울 수 있고 대부분 월급이 안정적으로 나옴. 회사 규모가 작더라도 안정적이며 최소한의 개발 환경과 문화를 보장하는 회사는 괜찮음.</p>
+</li>
+<li><p>업무: 내 성격상 주도적으로 일을 해야 하는데 그러지 못하는 것에 대한 스트레스가 주도적으로 일을 할 때 발생하는 스트레스보다 크다는 생각이 들었음.</p>
+</li>
+<li></li>
+</ol>
+
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%EC%9D%B8%ED%95%98%EC%9A%B0%EC%8A%A4/">#인하우스</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%EC%BD%98%ED%85%90%EC%B8%A0/">#콘텐츠</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/%EA%B0%9C%EB%B0%9C%EC%9E%90/">#개발자</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/SM/">#SM</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Legacy-Codes/">#Legacy Codes</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2020/10/18/tinypast/">지원하지 않는 PHP 버전에서 사용할 Microframework 구현</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2020/09/09/work-with-legacy-code/">Legacy code를 대한 나의 자세</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+
+
+<div class="comments">
+    <h3 class="title is-4">댓글</h3>
+    
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://blog.inlee.me/2020/09/19/in-house-system-management/';
+        this.page.identifier = '2020/09/19/in-house-system-management/';
+        
+        this.language = 'ko';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'github-blog-inlee' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-left">
+                &copy; 2020 inlee&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                        <br>
+                        Modified by <a href="https://inium.github.io" target="_blank" rel="noopener">inlee</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow" title="GitHub" href="https://github.com/inium" target="_blank" rel="noopener">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("ko");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="아무거나 입력하세요" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '글',
+                PAGES: '페이지',
+                CATEGORIES: '카테고리 목록',
+                TAGS: '태그 목록',
+                UNTITLED: '(제목없음)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>

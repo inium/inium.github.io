@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+<title>개발자는 멀티태스킹 기계가 아니다 - inlee&#39;s blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="커피를 마셔 코드를 만들며 개인의 경험과 소프트웨어 개발 기술 등에 대해 다룹니다.">
+
+
+
+<meta name="keywords" content="software developer,web,php">
+
+
+
+    <meta name="description" content="23장. 개발자는 멀티태스킹 기계가 아니다 - 조엘 온 소프트웨어(Joel on Software)  개발자라면 누구나 다 알고 있는 조엘 온 소프트웨어(Joel on Software) 23장의 제목이다. 이 장에서는 작업 2개 (A&#x2F;B)를 직렬 &amp;amp; 병렬 처리 시 각각의 업무 효율에 대해 이야기하고 있고 업무 전환 시간을 고려한다면 직렬 업무 처리가">
+<meta name="keywords" content="Work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="개발자는 멀티태스킹 기계가 아니다">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.inlee.me&#x2F;2020&#x2F;03&#x2F;11&#x2F;human-task-switches-considered-harmful&#x2F;index.html">
+<meta property="og:site_name" content="inlee&#39;s blog">
+<meta property="og:description" content="23장. 개발자는 멀티태스킹 기계가 아니다 - 조엘 온 소프트웨어(Joel on Software)  개발자라면 누구나 다 알고 있는 조엘 온 소프트웨어(Joel on Software) 23장의 제목이다. 이 장에서는 작업 2개 (A&#x2F;B)를 직렬 &amp;amp; 병렬 처리 시 각각의 업무 효율에 대해 이야기하고 있고 업무 전환 시간을 고려한다면 직렬 업무 처리가">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2020-03-11T08:11:27.000Z">
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+<link rel="icon" href="/images/favicon.ico">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Noto+Sans+KR|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153151440-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153151440-1');
+</script>
+
+
+    
+
+
+<link rel="alternate" href="/rss2.xml" title="inlee's blog" type="application/rss+xml">
+</head>
+<body>
+    
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    inlee&#39;s blog
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item "
+               href="/archives">Archives</a>
+            
+            <a class="navbar-item "
+               href="/categories">Categories</a>
+            
+            <a class="navbar-item "
+               href="/tags">Tags</a>
+            
+            <a class="navbar-item "
+               href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="검색" href="javascript:;" target="_blank" rel="noopener">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="목차">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#결론">1&nbsp;&nbsp;<b>결론</b></a>
+                    
+                </div>
+            </div>
+            
+            
+            <a class="navbar-item" title="RSS" href="/rss2.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
+</nav>
+
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            개발자는 멀티태스킹 기계가 아니다
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-03-11T08:11:27.000Z" itemprop="datePublished">3월 11 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/Developer/">Developer</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            5분 소요 (약 743 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <blockquote>
+<p>23장. 개발자는 멀티태스킹 기계가 아니다 - <em>조엘 온 소프트웨어(Joel on Software)</em></p>
+</blockquote>
+<p>개발자라면 누구나 다 알고 있는 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=553103" target="_blank" rel="noopener">조엘 온 소프트웨어(Joel on Software)</a> 23장의 제목이다. 이 장에서는 작업 2개 (A/B)를 직렬 &amp; 병렬 처리 시 각각의 업무 효율에 대해 이야기하고 있고 업무 전환 시간을 고려한다면 직렬 업무 처리가 훨씬 효율적이라고 말하고 있다. 그리고 사람은 기계보다 업무 전환에 필요한 시간이 많이 걸리고 관리자는 개발자에게 한가지 일에 몰두할 수 있도록 해줘야 할 책임이 있으며 2가지 일을 동시에 하도록 해서는 안된다고 언급하고 있다.</p>
+<p>이런 업무간 전환을 <strong>“작업 전환(Task Switching)”</strong> 이라고 하며 개발자들에겐 <strong>컨텍스트 스위칭(Context Switching)</strong> 이라는 말이 친숙할 것이다. 이를 언급하고 있는 좋은 글을 찾아본 결과 아래와 같았다.</p>
+<ul>
+<li>2001년 매일경제의 기사 <a href="https://www.mk.co.kr/news/home/view/2001/08/208506/" target="_blank" rel="noopener">멀티태스킹, 비효율적… ‘전환비용’ 발생</a></li>
+<li>2009년 ZD Net의 기사 <a href="https://www.zdnet.co.kr/view/?no=20090914155953" target="_blank" rel="noopener">[한용희]개발자의 심리학</a></li>
+<li>2010년 류한석의 피플웨어 (peopleware.kr)의 글 <a href="https://www.mk.co.kr/news/home/view/2001/08/208506/" target="_blank" rel="noopener">멀티태스킹, 비효율적… ‘전환비용’ 발생</a></li>
+</ul>
+<p>강산이 최소 1번 이상 변한 글들임에도 불구하고 이 이야기들은 지금도 회자되고 있으며(#1, #2, #3) 분야가 다르지만 2019년 국내 논문<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> 에도 이러한 이야기를 하고 있다.</p>
+<p>그렇다면, 지</p>
+<!-- 개인적으로는 구현에 몰입을 한 상태에서 다른 일 처리 요청을 받으면 현재 일을 중단하고 처리해야 하는 일에 대한 복기를 해야 하며 처리 완료 후 기존 일에 대한 복기 또한 필요했다. 이 과정이 쉽지 않았고 반복될수록 복기되는 시간이 늘어나게 되었으며 나중에는 급기야 무기력함 및 집중과 몰입이 되지 않기도 했다.
+
+이러한 현상은 사실 "개발자 멀티태스킹 기계" 라고 구글에 [검색](https://www.google.com/search?client=safari&rls=en&q=%EA%B0%9C%EB%B0%9C%EC%9E%90+%EB%A9%80%ED%8B%B0%ED%83%9C%EC%8A%A4%ED%82%B9+%EA%B8%B0%EA%B3%84&ie=UTF-8&oe=UTF-8) 해보면 다른 개발자들께서도 같은 어려움을 말하고 있다. 이러한 일이 어떤 경우에 발생하는지 개인 경험을 기반으로 느낀 몇 가지는 아래와 같다. -->
+
+<h3 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h3><p>지식근로자라면 다 그렇다.</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">유은정 외, 간호사의 업무흐름 중단(Work Interruption)에 대한 개념분석, 간호행정학회지, 2019, vol.25, no.4, pp. 272-281. <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002511342." target="_blank" rel="noopener">#</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/Work/">#Work</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2020/03/12/howto-write-git-commit-messsage/">howto-write-git-commit-messsage</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2019/11/23/hello-world/">Hello World</a>
+            
+        </span>
+    </div>
+    
+</article>
+
+
+
+
+<div class="comments">
+    <h3 class="title is-4">댓글</h3>
+    
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://blog.inlee.me/2020/03/11/human-task-switches-considered-harmful/';
+        this.page.identifier = '2020/03/11/human-task-switches-considered-harmful/';
+        
+        this.language = 'ko';
+        
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'github-blog-inlee' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-left">
+                &copy; 2020 inlee&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
+                        <br>
+                        Modified by <a href="https://inium.github.io" target="_blank" rel="noopener">inlee</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow" title="GitHub" href="https://github.com/inium" target="_blank" rel="noopener">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("ko");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
+    </script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="아무거나 입력하세요" />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '글',
+                PAGES: '페이지',
+                CATEGORIES: '카테고리 목록',
+                TAGS: '태그 목록',
+                UNTITLED: '(제목없음)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
+</body>
+</html>
