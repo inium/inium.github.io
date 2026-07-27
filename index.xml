@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Inlee's Blog</title><link>/</link><description>Recent content on Inlee's Blog</description><generator>Hugo</generator><language>ko-KR</language><copyright>&amp;copy; inlee</copyright><lastBuildDate>Mon, 27 Jul 2026 15:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>주간소식 스킬에 인스타그램 게시글 제작 과정 추가</title><link>/posts/2026/07/cardnews-weekly-instagram/</link><pubDate>Mon, 27 Jul 2026 15:00:00 +0000</pubDate><guid>/posts/2026/07/cardnews-weekly-instagram/</guid><description>&lt;p>작년부터 개발·운영 중인 록 음악 커뮤니티 리얼그루브에서는 새로운소식 데이터를 활용해 AI 기반의 
+ 
+ &lt;a href="/posts/2026/06/07/realgroove-ai-daily-cardnews/">일일 카드뉴스 제작&lt;/a>과 
+ 
+ &lt;a href="/posts/2026/05/realgroove-ai-weekly-reporter/">주간소식 작성&lt;/a>에 AI를 활용하고 있다.&lt;/p></description></item><item><title>MCP를 이용한 카드뉴스 및 주간소식 제작 개선</title><link>/posts/2026/06/realgroove-mcp-weekly-daily/</link><pubDate>Mon, 22 Jun 2026 15:00:00 +0000</pubDate><guid>/posts/2026/06/realgroove-mcp-weekly-daily/</guid><description>&lt;p>작년부터 개발·운영 중인 록 음악 커뮤니티 리얼그루브의 새로운소식 글을 이용해 
+ 
+ &lt;a href="/posts/2026/06/07/realgroove-ai-daily-cardnews/">일일 카드뉴스 제작&lt;/a>과 
+ 
+ &lt;a href="/posts/2026/05/realgroove-ai-weekly-reporter/">주간소식 작성&lt;/a>에 AI를 활용하고 있다.&lt;/p></description></item><item><title>AI를 이용한 일일 인스타그램 카드뉴스 요약 및 생성 자동화</title><link>/posts/2026/06/07/realgroove-ai-daily-cardnews/</link><pubDate>Thu, 11 Jun 2026 15:00:00 +0000</pubDate><guid>/posts/2026/06/07/realgroove-ai-daily-cardnews/</guid><description>&lt;p>작년부터 개발·운영 중인 록 음악 커뮤니티 &lt;a href="https://realgroove.net" target="_blank" rel="noreferrer">리얼그루브&lt;/a>는 매일 &lt;a href="https://realgroove.net/space/news/post" target="_blank" rel="noreferrer">새로운소식&lt;/a>에 업로드한 글들을 X&lt;a href="https://x.com/realgroove_net" target="_blank" rel="noreferrer">(옛 트위터)&lt;/a>에도 요약해 올리고 있다&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Claude Code를 이용한 주간소식 요약 및 자동화</title><link>/posts/2026/05/realgroove-ai-weekly-reporter/</link><pubDate>Wed, 06 May 2026 08:30:00 +0000</pubDate><guid>/posts/2026/05/realgroove-ai-weekly-reporter/</guid><description>&lt;p>작년부터 개발하고 운영 중인 록 음악 커뮤니티 &lt;a href="https://realgroove.net" target="_blank" rel="noreferrer">리얼그루브&lt;/a>￼에는 &lt;a href="https://realgroove.net/space/weekly/post" target="_blank" rel="noreferrer">주간소식&lt;/a> 메뉴가 있다. 매주 평균 60개 이상의 &lt;a href="https://realgroove.net/space/news/post" target="_blank" rel="noreferrer">새로운소식&lt;/a> 글을 직접 정리해, 매주 월요일에 업로드하고 있다.&lt;/p></description></item><item><title>20년 넘은 레거시 사이트에 Vue 기반 GNB / Footer 적용</title><link>/posts/2026/04/renewal-gnb-vue/</link><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate><guid>/posts/2026/04/renewal-gnb-vue/</guid><description>&lt;p>전 회사 메인 서비스는 20년 이상 운영된 레거시 환경 아래 구성되어 있었다. 그동안 수많은 기능이 추가되었지만, 적절한 시점에 리팩토링이 이루어지지 않은 채 확장만 반복되면서 코드 구조는 점점 복잡해졌고, 이른바 ‘스파게티 코드’ 상태가 되어 기존 코드를 분석하고 새로운 기능을 적용하는 과정 자체가 쉽지 않은 상태였다.&lt;/p></description></item><item><title>웹으로 구현해본 3D 소프트웨어 렌더러</title><link>/posts/2026/04/implement-web-software-renderer/</link><pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate><guid>/posts/2026/04/implement-web-software-renderer/</guid><description>&lt;p>웹 개발을 하다 보면 이미지를 다루어야 하는 경우가 생기고, 그 과정에서 Canvas를 사용하는 상황을 한 번쯤은 마주하게 된다.&lt;/p></description></item><item><title>About Me</title><link>/about/</link><pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;section
+ class="not-prose 
+ items-center
+ mb-3 flex flex-col"
+>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ &lt;picture
+ class="mb-2 h-auto w-36 rounded-full"
+ 
+ >
+ 
+ 
+ 
+ 
+ &lt;source
+ 
+ 
+ srcset="/profile/inlee_hu_63835206095527d4.webp"
+ 
+ 
+ sizes="100vw"
+ type="image/webp"
+ />
+ 
+ &lt;img
+ width="460"
+ height="460"
+ class="mb-2 h-auto w-36 rounded-full"
+ alt="이인 (In Lee)"
+ loading="lazy" decoding="async"
+ 
+ src="/profile/inlee.jpeg"
+ 
+ />
+ &lt;/picture>
+ 
+
+
+ 
+ 
+ &lt;h1 class="text-4xl font-extrabold">
+ 이인 (In Lee)
+ &lt;/h1>
+ 
+ &lt;h2 class="text-xl text-neutral-500 dark:text-neutral-400">
+ ☕️ 커피와 🤘락 음악을 좋아하는 소프트웨어 개발자 입니다.
+ &lt;/h2>
+ 
+ &lt;div class="mt-1 text-2xl">
+ 
+ &lt;div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+ 
+ 
+ &lt;a
+ class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+ style="will-change:transform;"
+ href="mailto:jamesinlee@gmail.com"
+ target="_blank"
+ aria-label="Email"
+ rel="me noopener noreferrer"
+ >&lt;span class="icon relative inline-block px-1 align-text-bottom">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/>&lt;/svg>
+&lt;/span>&lt;/a
+ >
+ 
+ 
+ 
+ &lt;a
+ class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+ style="will-change:transform;"
+ href="https://linkedin.com/in/jamesinlee"
+ target="_blank"
+ aria-label="Linkedin"
+ rel="me noopener noreferrer"
+ >&lt;span class="icon relative inline-block px-1 align-text-bottom">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>&lt;/svg>
+&lt;/span>&lt;/a
+ >
+ 
+ 
+ 
+ &lt;a
+ class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+ style="will-change:transform;"
+ href="https://github.com/inium"
+ target="_blank"
+ aria-label="Github"
+ rel="me noopener noreferrer"
+ >&lt;span class="icon relative inline-block px-1 align-text-bottom">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">&lt;path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>&lt;/svg>
+&lt;/span>&lt;/a
+ >
+ 
+ 
+ &lt;/div>
+
+
+ &lt;/div>
+&lt;/section>
+
+
+&lt;br />
+안녕하세요. 풀스택 소프트웨어 개발자 이인입니다.
+&lt;p>Computer Graphics (Real-Time Rendering)를 전공했고 관련 업무를 했으며, 현재 풀스택 웹 개발자로 업무를 하고 있습니다.️&lt;/p></description></item><item><title>퇴사 후 - 지금 아니면 평생 후회할 것 같아 시작한 서비스를 만들고 운영한 경험 (그리고 진행중)</title><link>/posts/2026/01/after-resign-todo/</link><pubDate>Mon, 26 Jan 2026 19:00:00 +0000</pubDate><guid>/posts/2026/01/after-resign-todo/</guid><description>&lt;p>
+ 
+ &lt;a href="/posts/2025/12/resign-lookback/">이전 글에서와 같이&lt;/a> 작년 4월까지 회사를 다녔다. 이직을 준비하던 중, 오래전부터 해보고 싶었던 일이 다시 떠올랐다. 막연히 언젠가 하겠다고 미뤄왔지만, 지금이 아니면 어렵겠다는 생각이 들었다.&lt;/p></description></item><item><title>전 회사 개발팀 팀장으로서의 역할 회고 - 나는 무엇을 했고 개선하려 노력했는가</title><link>/posts/2025/12/team-leader-lookback/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>/posts/2025/12/team-leader-lookback/</guid><description>&lt;p>전 회사에서 개발팀 팀장으로 근무했었다. 20년 넘는 오래된 레거시 시스템을 유지보수하면서 동시에 신규 프로젝트를 진행해야 하는 팀을 맡는다는 건, 시작부터 쉽지 않은 과제였다.&lt;/p></description></item><item><title>퇴사 - 나의 여정에서의 밑거름, 새로운 챕터를 열 기회를 맞이했다</title><link>/posts/2025/12/resign-lookback/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>/posts/2025/12/resign-lookback/</guid><description>&lt;p>전 회사에서 개발팀 팀장으로써 20년 넘게 축적된 레거시 청산과 교체 그리고 기술 개선을 해 왔다. 신규 사이트 및 API 개발은 현재 팀 그리고 회사에서 사용중인 기술개발스택을 고려해 결정 후 진행했다.&lt;/p></description></item><item><title>신입사원 교육 - 인공지능 (AI) 기초지식 요약 정리</title><link>/posts/2025/03/rookie-training-ai-basic/</link><pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate><guid>/posts/2025/03/rookie-training-ai-basic/</guid><description>&lt;p>최근 몇년 동안 신입사원 교육을 진행했고 이를 위한 커리큘럼을 준비했다. 짧은 교육 기간이지만 도움이 되고자 매년 다르게 준비했는데, 올해 커리큘럼에는 AI 에 대한 기초 지식을 추가하였다.&lt;/p></description></item><item><title>회고 - Laravel 게시판 패키지 수정</title><link>/posts/2023/modify-laravel-board-package/</link><pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate><guid>/posts/2023/modify-laravel-board-package/</guid><description>&lt;p>약 3년전쯤 Laravel에서 사용할 게시판을 패키지로 구현한 후 바쁘다는 핑계로 방치해두고 로직 구현만 참조하고 있었다. 그런데, 올해 중순 경 어느 개발자 한 분이 패키지가 오래되어 설치가 되지 않아 정상동작하는 버전이 있는지 문의를 했었고 없던 관계로 나도 겸사겸사 사용할 목적으로 새로 구현한 후 회신하였다.&lt;/p></description></item><item><title>2022년을 마무리하며 (회고)</title><link>/posts/2022/12/lookback/</link><pubDate>Sat, 24 Dec 2022 23:50:33 +0000</pubDate><guid>/posts/2022/12/lookback/</guid><description>&lt;p>2022년이 얼마 남지 않아 올해 있던 일 중 몇 가지를 되돌아보고 정리해보고자 한다.&lt;/p></description></item><item><title>Job Interview 후기</title><link>/posts/2022/05/job-interview-lookback/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><guid>/posts/2022/05/job-interview-lookback/</guid><description>&lt;p>회사를 떠나고 다른 곳으로 가기 위해 면접과 채팅을 나눠보았다. 좋은 경험도 있었지만, 그렇지 못한 경험도 있었으며 어떠했는지 간략하게 개인적인 느낌을 적어보려고 한다.&lt;/p></description></item><item><title>고도몰5 Pro 기반 자사몰 기능개발 / 유지보수 하며 느낀점들</title><link>/posts/2022/04/godomall-lookback/</link><pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate><guid>/posts/2022/04/godomall-lookback/</guid><description>&lt;p>고도몰5 Pro 기반으로 제작된 자사몰(이하 고도몰)을 빠져나오는 것을 목표로 했지만 현실적으로 고도몰 기능추가 / 유지보수를 담당하게 되었다. 이 글은 지난 1년간 담당했던 고도몰의 기능개발 / 유지보수를 하며 개발자 관점에서 느낀 점이다.&lt;/p></description></item><item><title>공유오피스 위워크(wework) 1년여간 경험 - 장점과 단점</title><link>/posts/2022/04/wework-lookback/</link><pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate><guid>/posts/2022/04/wework-lookback/</guid><description>&lt;p>이 글은 지난 1년여간 공유오피스인 위워크(wework)에 입주한 회사에서 일을 하며 느낀 점에 대한 내용이다. 위워크는 여러 지점이 있지만, 작성한 내용은 모든 지점에 대해 공통으로 적용될 것 같다.&lt;/p></description></item><item><title>2020년을 마무리하며 (회고)</title><link>/posts/2020/12/lookback/</link><pubDate>Wed, 23 Dec 2020 23:09:06 +0000</pubDate><guid>/posts/2020/12/lookback/</guid><description>&lt;p>2020년은 코로나19로 인해 많은 것들이 변했지만 나에게도 많은 변화가 있었다. 기존 것을 과감히 버리려고 했고 새로운 것을 얻으려 했지만 생각만큼 만족한 결과를 얻진 못했다. 개발자로의 삶을 영위하기 위해 꼭 필요하지만 갖지 못했던 것을 가질 수 있었지만 개발자로써의 학습은 많이 하지 못한것 같다. 2021년에는 조금 더 발전하는 개발자가 되고자 2020년을 정리해 보고자 한다.&lt;/p></description></item></channel></rss>
